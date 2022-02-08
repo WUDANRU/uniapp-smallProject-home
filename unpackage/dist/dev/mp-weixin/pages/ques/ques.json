@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "房产热问",
+  "navigationBarBackgroundColor": "#f6f6f6",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "c-qu": "/components/cqu/cques"
+  }
+}

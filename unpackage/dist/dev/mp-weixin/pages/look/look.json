@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "发现",
+  "navigationBarBackgroundColor": "#f6f6f6",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "c-first": "/components/clooks/cfirst",
+    "c-second": "/components/clooks/csecond"
+  }
+}

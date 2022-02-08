@@ -1,0 +1,1 @@
+<view><block wx:for="{{iconAll}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view><block wx:for="{{item}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2"><view>{{''+item2+''}}</view></block></view></block></view>

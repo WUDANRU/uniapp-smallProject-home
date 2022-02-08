@@ -1,0 +1,97 @@
+<template>
+	<div class="m-2">
+		<div class="font-4a font-bold">
+			猜你喜欢
+		</div>
+		<div class="mt-2" v-for="(iview,iv) in likeAll" :key="iv">
+			<div class="d-flex f-r">
+			
+			<image :src="iview.cover" style="width:280rpx;" mode="widthFix"></image>
+			<div class="d-flex f-c ml-1a" style="flex:1;">
+				<div class="d-flex f-r"><text class="mr-1 font-2 c-5 bd-2 p-sm">{{iview.one1}}</text><text>{{iview.one2}}</text></div>
+	            <text class="c-6 font-2a mt-2">{{iview.two}}</text>
+				<div class="d-flex f-r mt-1 align-c"><text class="c-5 font-bold font-3a">{{iview.three}}</text><text class="c-5 font-2a"> 元/㎡</text></div>
+				<div class="d-flex f-r">
+				<text class="c mr-2 bd-3 font-2 px-1">{{iview.four}}</text>
+				<text class="c-7 bd-4 px-1 font-2">{{iview.five}}</text>
+				<text class="c-7 bd-4 px-1 font-1a">{{iview.six}}</text>
+				<text class="c-7 bd-4 px-1 font-1a">{{iview.seven}}</text>
+				</div>
+				<div class="mt-2">
+					<div class="d-flex f-r j-sb align-c">
+						<div class="d-flex f-r">
+							<text class="bd-5 c font-1a px-1">荐</text>
+							<text class="font-2 c-8 ml-1">{{iview.text1}}</text>
+						</div>
+						<text style="font-size:5rpx;" @click="iview.flag=!iview.flag" class="c-8" :class="iview.flag?' iconfont icon-jiantouxia':' iconfont icon-jiantoushang'"></text>
+					</div>
+					<div class="d-none f-r j-sb align-c mt-1a" :style="iview.flag?'display:none;':'display:flex;'">
+						<div class="d-flex f-r">
+							<text class="bd-5 c font-1a px-1 bd-6">看</text>
+							<text class="font-2 c-8 ml-1">{{iview.text2}}</text>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+			<div class="d-flex f-c border-4 my-3a"></div>
+		</div>
+	</div>
+</template>
+
+<script>
+	export default {
+		data(){
+			return{
+				likeAll:[
+					{
+						cover:"/static/ph.png",
+						one1:"新盘",
+						one2:"中骏丽景府二期",
+						two:"晋江市 磁灶 | 建面97-143㎡",
+						three:"7700",
+						four:"在售",
+						five:"住宅",
+						six:"配套纯熟",
+						seven:"公园",
+						text1:"学府旁超万平绿化中骏大盘",
+						text2:"预约看房，免费专车往返接送",
+						flag:false
+					},
+					{
+						cover:"/static/ph.png",
+						one1:"新盘",
+						one2:"中骏丽景府二期",
+						two:"晋江市 磁灶 | 建面97-143㎡",
+						three:"7700",
+						four:"在售",
+						five:"住宅",
+						six:"配套纯熟",
+						seven:"公园",
+						text1:"学府旁超万平绿化中骏大盘",
+						text2:"预约看房，免费专车往返接送",
+						flag:false
+					},
+					{
+						cover:"/static/ph.png",
+						one1:"新盘",
+						one2:"中骏丽景府二期",
+						two:"晋江市 磁灶 | 建面97-143㎡",
+						three:"7700",
+						four:"在售",
+						five:"住宅",
+						six:"配套纯熟",
+						seven:"公园",
+						text1:"学府旁超万平绿化中骏大盘",
+						text2:"预约看房，免费专车往返接送",
+						flag:false
+					},
+				]
+			}
+		}
+	}
+</script>
+
+<style src="@/static/nvue-icon.css">
+</style>

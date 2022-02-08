@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/msg/msg",
+    "pages/ques/ques",
+    "pages/look/look",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/seroom/seroom",
+    "pages/city/city",
+    "pages/select/select",
+    "pages/video/video",
+    "pages/abc/abc",
+    "pages/text/text"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#23c993",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#093b29",
+    "selectedColor": "#23c993",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/i-selected.png"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "text": "消息",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/i-selected.png"
+      },
+      {
+        "pagePath": "pages/ques/ques",
+        "text": "问答",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/i-selected.png"
+      },
+      {
+        "pagePath": "pages/look/look",
+        "text": "发现",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/i-selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/i-selected.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "小程序将使用定位功能"
+    }
+  },
+  "usingComponents": {}
+}

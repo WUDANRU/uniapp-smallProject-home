@@ -1,0 +1,159 @@
+
+.fsmall.data-v-55de4b74{
+	font-size: 26rpx;
+}
+.fmiddle.data-v-55de4b74{
+	font-size: 28rpx;
+}
+.blue.data-v-55de4b74{
+	color: #007AFF;
+}
+.bold.data-v-55de4b74{
+	font-weight: 600;
+}
+.flex.data-v-55de4b74{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mask.data-v-55de4b74 {
+	position: fixed;
+	z-index: 3;
+	top: 40%;
+	left: 40%;
+}
+.mask-r.data-v-55de4b74 {
+	height: 120rpx;
+	width: 120rpx;
+	border-radius: 60rpx;
+	display: flex;
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-backdrop-filter: blur(5px);
+	        backdrop-filter: blur(5px);
+	justify-content: center;
+	align-items: center;
+	font-size: 40rpx;
+	color: #FFFFFF
+}
+.content.data-v-55de4b74 {
+	height: 100%;
+	width: 100%;
+	background-color: #ffffff;
+}
+.header.data-v-55de4b74 { 
+	width: 100%;
+	position: relative;
+	z-index: 8;
+	background-color: #FFFFFF;
+}
+.back_div.data-v-55de4b74 {
+	width: 100rpx;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.back_img.data-v-55de4b74 {
+	width: 35rpx;
+	height: 35rpx;
+}
+.input.data-v-55de4b74 {
+	font-size: 26rpx;
+	width: 600rpx;
+	height: 60rpx;
+	max-height: 60rpx;
+	border-radius: 10rpx;
+	background-color: #F5F5F5;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+	box-sizing: border-box;
+}
+.title.data-v-55de4b74 {
+	font-size: 30rpx;
+	color: white;
+}
+.show.data-v-55de4b74 {
+	left: 0;
+	width: 100%;
+	transition: left 0.3s ease;
+}
+.hide.data-v-55de4b74 {
+	left: 100%;
+	width: 100%;
+	transition: left 0.3s ease;
+}
+.title.data-v-55de4b74 {
+	font-size: 30rpx;
+	color: white;
+}
+.letters.data-v-55de4b74 {
+	position: absolute;
+	right: 0; 
+	width: 80rpx;
+	color: #333333; 
+	top: 25%; 
+	text-align: center;
+	font-size: 24rpx;
+	font-weight: 510;
+}
+.letters .fmin.data-v-55de4b74{
+}
+.letter-header.data-v-55de4b74 { 
+	font-size: 28rpx; 
+	padding-left: 40rpx;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.city-div.data-v-55de4b74 {
+	width: 660rpx;
+	margin: auto;
+	padding: 20rpx 0;
+	border-bottom-width: 0.5rpx;
+	border-bottom-color: #ebedef;
+	border-bottom-style: solid;
+	display: flex;
+	align-items: center;
+}
+.city.data-v-55de4b74 {
+	font-size: 28rpx;
+	color: #000000;
+	padding-left: 30rpx;
+}
+.dingwei.data-v-55de4b74 {
+	width: 90%;
+	margin: auto;
+	padding-top: 25rpx;
+	box-sizing: border-box;
+	margin-bottom: 26rpx;
+}
+.dingwei .grey.data-v-55de4b74{
+	margin-bottom: 25rpx;
+}
+.dingwei_city.data-v-55de4b74 {
+	width: 100%;  
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.dingwei_city_one.data-v-55de4b74 { 
+	height: 60rpx;
+	background-color: #F5F5F5;
+	border-radius: 30rpx;
+	font-size: 26rpx; 
+	padding: 0 20rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 20rpx 20rpx 0;
+}
+.dingweis.data-v-55de4b74 {
+	width: 32rpx;
+	height: 32rpx;
+}
+.dingwei_city_zuijin.data-v-55de4b74 {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+} 
+

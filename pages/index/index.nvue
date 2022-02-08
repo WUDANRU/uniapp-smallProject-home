@@ -1,0 +1,238 @@
+<template>
+	<div>
+       <div class="h bcolor d-flex f-r align-c px-1 p-fixed" style="width:360px;">
+			<image class="mr-1" src="/static/logo.png" style="width:120rpx;" mode="widthFix"></image>
+			<div class="bd-white d-flex f-r align-c" style="flex:1;height:80rpx;line-height:80rpx;border-radius:10rpx;color:#767b81;">
+				<navigator url="/pages/city/city">
+				<div class="d-flex f-r">
+				<text class="font-2a ml-1" style="width:42px;">{{city}}</text>
+				<image class="mt-1" style="width:10px;" mode="widthFix" src="/static/icons/xiajiantou.png" />
+				</div>
+				</navigator>
+				<navigator url="/pages/seroom/seroom">
+				<text class="pl-1 c-8 font-2a" style="flex:1;">安心挑好房，当然安居客</text>
+				</navigator>
+				</div>
+				<image style="width:20px;" class="ml-1" mode="widthFix" src="/static/icons/kefu.png" />
+		</div>
+		<div style="margin-top:50px;"></div>
+		  <scroller class="scroller" style="display:flex;flex-direction: row;" scroll-direction="horizontal">
+		    <!-- <block> -->
+			<div v-for="(uu,uux) in iconAll" :key="uux" class="d-flex f-r flex-wrap" style="width:375px;background:pink;">
+				<div class="" v-for="(e,ex) in uu" :key="ex" >
+				<div style="padding:12px;" class="d-flex align-c">
+					<image style="width:50px;" :src="e.cover" mode="widthFix"></image>
+					<text class="mt-1">{{e.title}}</text>
+			    </div>
+				</div>
+		    </div>
+			<!-- </block> -->
+			<!-- <div class="row" style="background-color: #0077AA;">
+			  <div style="background:orange;width:375px;">eee</div>
+			</div> -->
+		  </scroller>
+		
+		<div class="mx-2">
+			<!-- <div><text class="iconfont icon-dingwei" style="font-size:20px;"></text>dd</div> -->
+			<div class="d-flex f-r my-2 align-c">
+				<div class="pl-1 my-2" style="width:100px;">
+					<text class="c-9">{{cityName}}</text>
+					<div class="border-6 my-1" style="width:70px;"></div>
+					<div>房价</div>
+				</div>
+				<div class="d-flex f-r j-around" style="flex:1;">
+					<block v-for="(a,j) in 3" :key="j">
+					<div class="d-flex f-c align-c">
+						<text class="font-4 c-4">5842元</text>
+						<text style="font-size:14px">最新均价</text>
+					</div>
+					</block>
+				</div>
+			</div>
+			
+			<div class="my-1">
+				<image src="/static/news.png" mode="widthFix"></image>
+			</div>
+			
+		<scroller class="d-flex f-r" scroll-direction="horizontal" show-scrollbar="true">
+			<div v-for="(u,o) in scroller" :key="o">
+				<div class="px-3 b-radius-circle mt-2 mr-2" :style="u.style">
+					<div>{{u.area}}</div>
+					<text style="margin-top:10px;margin-bottom:10px;font-size:14px;" :style="u.color">{{u.text}}</text>
+					<div style="display: flex;flex-direction: row;" >
+						<image style="width:100px;" :src="u.img1" mode="widthFix" />
+						<image style="width:100px;" :src="u.img2" mode="widthFix" />
+					</div>
+				</div>
+			</div>
+			<!-- <div style="background-color: pink;width:375px;height:400px;">
+				ssss
+			</div> -->
+		</scroller>
+		</div>
+		
+		<n-like></n-like>
+		<!-- 如果是div是没有颜色的，用text -->
+		<!-- <text style="color:pink;">dddddddd</text> -->
+		
+		<!-- <text class="iconfont icon-like">&#xe61f;</text>
+		<text class="iconfont icon-like">&#xe757;</text>
+		<text class="iconfont">{{icons.dd}}</text> -->
+	</div>
+</template>
+
+<script>
+	import nLike from '@/components/nvue/nlike.nvue' 
+	// var dom = weex.requireModule('dom');
+	// 	dom.addRule('fontFace', {
+	// 	    fontFamily: 'iconfont',
+	// 		 src: "url('https://at.alicdn.com/t/font_3118995_09ckoi5ntks8.ttf')"
+	// 	    // src: "url(\'https://at.alicdn.com/t/font_3118995_09ckoi5ntks8.ttf?t=1641969458842\')"
+	// 	});
+		  // url('https://at.alicdn.com/t/font_3118995_09ckoi5ntks8.ttf?t=1641969458842') format('truetype');
+	export default {
+		components:{
+			nLike
+		},
+		data(){
+			return{
+				  rows: [],
+				// 'check': '\ue855',
+				// 'check': '&#xe855;',
+				city:'地区',
+				cityName:'地区',
+				// icons:{
+				// 	'dd':'\ue60e'
+				// },
+				iconAll:[[	
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},
+					{
+					cover:'/static/tabbar/icon.png',
+					title:'新房'	
+					},],[
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+						{
+						cover:'/static/tabbar/icon.png',
+						title:'新房'	
+						},
+					]],
+				scroller:[
+					{
+						area:"特价房专区",
+						text:"好而不贵 特价好房源",
+						img1:"/static/room-a.png",
+						img2:"/static/room-b.png",
+						style:"background-color:#faf8f5;",
+						color:"color:#8a6f40;"
+					},
+					{
+						area:"特价房专区",
+						text:"好而不贵 特价好房源",
+						img1:"/static/room-a.png",
+						img2:"/static/room-b.png",
+						style:"background-color:#f9f7f8;",
+						color:"color:#bb8e1b;"
+					},
+					{     
+						area:"特价房专区",
+						text:"好而不贵 特价好房源",
+						img1:"/static/room-a.png",
+						img2:"/static/room-b.png",
+						style:"background-color:#f3f7f9;",
+						color:"color:#33636f;"
+					},
+				],
+			}
+		},
+		methods:{
+		},
+		watch:{
+		city(newValue,oldValue){
+		if(newValue.length>3){
+			let n=newValue.slice(0,1)
+			let last=newValue.slice(newValue.length-1,newValue.length)
+			this.city=`${n}`+`...`+`${last}`
+		}
+			
+			},
+		},
+		created(){
+			uni.$on('clicked',(e)=>{
+				this.city=e
+				this.cityName=e
+			})
+		}
+	}
+</script>
+<style src="@/static/nvue-icon.css"></style>
+<!-- <style src="@/static/fontnvue.css"></style> -->

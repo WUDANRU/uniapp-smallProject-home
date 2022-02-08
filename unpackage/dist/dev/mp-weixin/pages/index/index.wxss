@@ -1,0 +1,5 @@
+
+button:after,uni-button:after{
+	border:none!important;
+}
+

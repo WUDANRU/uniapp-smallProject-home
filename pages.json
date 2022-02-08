@@ -1,0 +1,161 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	    ,{
+            "path" : "pages/msg/msg",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的联系人",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/ques/ques",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "房产热问",
+				"navigationBarBackgroundColor": "#f6f6f6",
+				"navigationBarTextStyle": "black",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/look/look",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发现",
+				"navigationBarBackgroundColor": "#f6f6f6",
+				"navigationBarTextStyle": "black",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/me/me",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#f6f6f6",
+				"navigationBarTextStyle": "black",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/seroom/seroom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索新房",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/city/city",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "城市选择",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator": "none", //隐藏滚动条
+					"bounce": "none" //不回弹
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/select/select",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/video/video",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "安居客",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/abc/abc",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/text/text",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+			// "navigationBarTextStyle": "black",
+			// "navigationBarTitleText": "uni-app",
+		
+		// "navigationBarTextStyle": "#FFFFFF", //有这个控制台会报错，默认文字颜色是白色的
+		"navigationBarBackgroundColor": "#23c993",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#093b29",
+		"selectedColor": "#23c993",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/i-selected.png"
+			},
+			{
+				"pagePath": "pages/msg/msg",
+				"text": "消息",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/i-selected.png"
+			},
+			{
+				"pagePath": "pages/ques/ques",
+				"text": "问答",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/i-selected.png"
+			},
+			{
+				"pagePath": "pages/look/look",
+				"text": "发现",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/i-selected.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我的",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/i-selected.png"
+			}
+		]
+	}
+}

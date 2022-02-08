@@ -1,0 +1,1 @@
+<view class="d-flex align-c f-c j-center" style="transform:scale(1.2);"><block wx:if="{{videoPlay}}"><view><video controls="{{true}}" id="myvideo" src="{{videoUrl}}" data-event-opts="{{[['fullscreenchange',[['screenChange',['$event']]]]]}}" bindfullscreenchange="__e"></video></view></block></view>

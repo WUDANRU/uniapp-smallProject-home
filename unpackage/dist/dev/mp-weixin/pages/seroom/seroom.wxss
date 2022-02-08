@@ -1,0 +1,26 @@
+
+.a{
+	  position:absolute;
+	  margin-top:24rpx;
+      margin-left:120rpx;
+      display: inline-flex;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 16rpx;
+      border-color: #fff;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      box-shadow: 2px -2px 2px #d5dedb;
+	  /* z-index:100; */
+}
+.b{
+		position:relative;
+		box-shadow: 0 3px 4px 0 #d5dedb;
+		margin-top:34rpx;
+		margin-left:90rpx;
+		width:230rpx;
+		background:#fff;
+		border: 1px solid #d5dedb;
+}
+

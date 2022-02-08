@@ -1,0 +1,17 @@
+
+uni-scroll-view{
+		overflow: none!important;
+}
+/* 解决小程序和app滚动条的问题 */
+::-webkit-scrollbar{
+	    display: none;
+}
+
+/* 解决H5 的问题 */
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<template>
+	<view class="main-wrapper">
+		<!-- 你可以直接写编码，直接写编码格式如下，直接赋值iconfont官网的UniCode -->
+		<view class="ly-row">
+			<text class="ly-icon">&#xe852;</text>
+		</view>
+		<view class="ly-row">
+			<text class="ly-icon">&#xe854;</text>
+		</view>
+		
+		<!-- 也可以从data中取 -->
+		<view class="ly-row">
+			<text class="ly-icon">{{icons.check}}</text>
+		</view>
+		<view class="ly-row">
+			<text class="ly-icon">{{icons.radio}}</text>
+		</view>
+	</view>
+</template>
+ 
+<script>
+	// 如果需要做多端编译，建议总是加上条件编译
+	// #ifdef APP-NVUE
+	const dom = weex.requireModule('dom');
+	dom.addRule('fontFace', {
+	    fontFamily: 'lyicon',
+	    src: "url('/static/lyicon.ttf')"
+	});
+	// #endif
+	export default {
+		data() {
+			return {
+				icons: {
+					// 'check': '&#xe855;', // 这种方式图标会显示不出来，需要转换成以下格式 &#x 换成 \u ，末尾的分号去掉
+					'check': '\ue855',
+					'radio': '\ue86b'
+				}
+			}
+		}
+	}
+</script>
+ 
+<style>
+	/* 非nvue端 后边加上 format('truetype') */
+	/* #ifndef APP-NVUE */
+	@font-face {
+		font-family: "lyicon";
+		src: url('/static/lyicon.ttf') format('truetype');
+	}
+	/* #endif */
+	
+	.ly-icon {
+		font-family: lyicon;
+		font-size: 36rpx;
+		color: #007AFF;
+	}
+	
+	.main-wrapper {
+		margin-top: 30rpx;
+	}
+	
+	.ly-row {
+		margin-top: 30rpx;
+		/* #ifndef APP-NVUE */
+		display: flex;
+		/* #endif */
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	.ly-text {
+		font-size: 30rpx;
+	}
+</style>
